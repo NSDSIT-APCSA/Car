@@ -6,7 +6,9 @@ public class Car {
     private int mileage;
     private int year;
 
+
     //Constructors
+
     public Car() {
         mileage = 0;
         year = 0;
@@ -18,6 +20,7 @@ public class Car {
     }
 
     //Methods
+
     public void setMileage(int mileage) {
         this.mileage = mileage;
     }
@@ -26,9 +29,18 @@ public class Car {
         System.out.println("Your car is broken :(");
     }
 
+    public int getMileage() {
+        return mileage;
+    }
+
     public static void main(String args[]) {
         Car carOne = new Car();
         carOne.setMileage(34);
         carOne.carError();
+        int carOneMiles = carOne.getMileage();
+        System.out.println(carOneMiles);
+        carOne.setMileage(500);
+        System.out.println(carOneMiles);
+        System.out.println(carOne.getMileage());
     }
 }
