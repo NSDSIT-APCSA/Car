@@ -25,12 +25,20 @@ public class Car {
         this.mileage = mileage;
     }
 
+    public void setYear(int year) {
+        this.year = year;
+    }
+
     public void carError() {
         System.out.println("Your car is broken :(");
     }
 
     public int getMileage() {
         return mileage;
+    }
+
+    public int getYear() {
+        return year;
     }
 
     public static void main(String args[]) {
