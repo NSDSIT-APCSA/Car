@@ -5,6 +5,8 @@ public class Car {
     //Instance Variables
     private int mileage;
     private int year;
+    private String brand;
+    private String model;
 
 
     //Constructors
@@ -19,6 +21,13 @@ public class Car {
         this.year = year;
     }
 
+    public Car(int mileage, int year, String brand, String model) {
+        this.mileage = mileage;
+        this.year = year;
+        this.brand = brand;
+        this.model = model;
+    }
+
     //Methods
 
     public void setMileage(int mileage) {
@@ -27,6 +36,14 @@ public class Car {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public void carError() {
@@ -39,6 +56,14 @@ public class Car {
 
     public int getYear() {
         return year;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
     }
 
     public static void main(String args[]) {
