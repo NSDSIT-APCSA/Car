@@ -24,12 +24,13 @@ public class Car {
         this.year = year;
     }
 
-    public Car(int mileage, int year, double psi, String brand, String model) {
+   public Car(int mileage, int year, double psi, String brand, String model, boolean blinkers) {
         this.mileage = mileage;
         this.year = year;
         this.tirePSI = psi;
         this.brand = brand;
         this.model = model;
+        this.hasBlinkers = blinkers;
     }
 
     // Methods
